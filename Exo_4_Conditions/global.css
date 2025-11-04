@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+button {
+    padding: 0.8rem;
+    /* border-radius: 1em; */
+    /* border: 2px solid black; */
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input {
+    padding: 0.8rem;
+}
+
+/* --------------- Exercice 1 -------------------- */
+.exo_1 {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+
+    .container_acces {
+        background-color: black;
+        height: 13rem;
+        width: 33rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: 2px solid white;
+        color: white;
+
+        .acces_site {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            label {
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+
+            button {
+                border: 2px solid white;
+                background-color: rgb(216, 58, 58);
+            }
+        }
+    }
+}
+
+/* ----------------------- Exercice 2  ----------------------------- */
+
+.exo_2 {
+    background-color: rgb(195, 201, 206);
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+
+    .container_annee {
+        background-color: rgb(75, 104, 128);
+        height: 13rem;
+        width: 33rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: 2px solid rgb(45, 50, 54);
+        color: white;
+
+        .annee_biss {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            label {
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+
+            button {
+                border: 2px solid white;
+                background-color: rgb(129, 152, 172);
+            }
+        }
+    }
+}
+/* ----------------------- Exercice 3  ----------------------------- */
+
+.exo_3 {
+    height: 60rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .container_boissons {
+        background-color: #DEDCCD;
+        height: 45rem;
+        width: 55rem;
+        border: 2px solid black;
+        padding: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .boissons {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                img {
+                    width: 8rem;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .choix {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            button {
+                border: 2px solid white;
+                background-color: black;
+                color: white;
+            }
+
+            .resultat_choix {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                img {
+                    width: 8rem;
+                    aspect-ratio: 1/1;
+                    object-fit: cover; 
+                }
+            }
+        }
+    }
+
+}

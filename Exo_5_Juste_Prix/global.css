@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #ffffff;
+    background: linear-gradient(141deg, rgba(255, 255, 255, 0.5) 15%, rgba(148, 165, 181, 0.75) 50%, rgba(89, 105, 127, 1) 75%, rgba(35, 47, 69, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 550;
+
+    @media(max-width:775px) {
+        height: fit-content;
+        padding: 3rem 0;
+    }
+
+}
+
+/* height: 100vh;
+    background-image: url(images/billet_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+section {
+    /* background-color: blanchedalmond; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    @media(max-width:775px) {
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    .container_img {
+        /* background-color: aliceblue; */
+        height: 90%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+
+        @media(max-width:775px) {
+            width: 100%;
+        }
+
+        /* .argent {
+            height: 40%;
+            overflow: hidden;
+        } */
+
+        .tirelire {
+            /* background-color: aqua; */
+            /* height: 30rem; */
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .container_jeu {
+        /* background-color: aquamarine; */
+        height: 90%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width:775px) {
+            width: 100%;
+        }
+
+        .card_jeu {
+            background-color: #F4F5F7;
+            height: 100%;
+            width: 90%;
+            border: 3px solid #59697F;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            .title_jeu {
+                background-color: #59697F;
+                height: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font-size: 3rem;
+                    font-family: "Chewy", system-ui;
+                    color: white;
+                }
+            }
+
+            .choice_niv {
+                /* background-color: cadetblue; */
+                height: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                gap: 3rem;
+
+
+            }
+
+            .hidd {
+                /* background-color: chartreuse; */
+                height: 65%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .instructions {
+                    display: none;
+
+                }
+
+                .jeu {
+                    /* background-color: beige; */
+                    /* display: none; */
+                    height: 25rem;
+                    aspect-ratio: 1/1;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3rem;
+                    color: #59697F;
+                    font-weight: 700;
+
+                    .reponse {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+
+
+                }
+
+                button {
+                    background-color: #fbe4a6;
+                    /* border: 2px solid #59697F; */
+                    color: #59697F;
+                    /* background-color: #728299ac;
+                    color: white;
+                    border: 2px solid #59697F; */
+                }
+
+                .reset {
+                    display: none;
+                }
+            }
+        }
+
+        input {
+            background-color: white;
+            padding: 0.8rem 2rem;
+            border-style: none;
+            border: 2px solid #59697F;
+            border-radius: 1rem;
+        }
+
+        button {
+            padding: 1rem 2rem;
+
+            background-color: #8CC6B9;
+            color: white;
+            /* border: 2px solid #5a7c75; */
+            /* background-color: #fbe4a6;
+            border: 2px solid white;
+            color: #59697F; */
+
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+
+    }
+}

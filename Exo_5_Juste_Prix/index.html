@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Le Juste Prix</title>
+
+    <link rel="stylesheet" href="global.css">
+    <script defer src="main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Dancing+Script:wght@400..700&family=Fira+Code:wght@300..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Dancing+Script:wght@400..700&family=Fira+Code:wght@300..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="container_img">
+            <!-- <div class="argent">
+                <img src="images/argent (1).png" alt="">
+            </div> -->
+            <div class="tirelire">
+                <img src="image/sac-dargent.png" alt="">
+            </div>
+        </div>
+
+        <div class="container_jeu">
+            <div class="card_jeu">
+                <div class="title_jeu">
+                    <h1>Combien de $ dans le sac ?</h1>
+                </div>
+
+                <div class="choice_niv">
+                    <button id="easy">Facile</button>
+                    <button id="average">Moyen</button>
+                    <button id="difficult">Difficile</button>
+                </div>
+
+                <div class="hidd">
+                    <div id="div1" class="instructions">
+                        <p>Choisissez une difficulté</p>
+                    </div>
+
+                    <div id="div2" class="jeu">
+                        <div>
+                            <p>Entrez un nombre entre 1 et <span id="max">XX</span></p>
+                        </div>
+                        <div>
+                            <p id="nbr_chances"></p>
+                        </div>
+                        <div class="reponse">
+                            <input id="input_number" type="number">
+                            <button id="btn_valid">Validez</button>
+                        </div>
+                        <div>
+                            <p id="p_result"></p>
+                        </div>
+                        <div class="reset">
+                            <button id="btn_reset">Réessayer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html

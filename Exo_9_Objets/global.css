@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body {
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(156, 156, 156, 1) 28%, rgba(99, 99, 99, 1) 63%, rgba(43, 43, 43, 1) 91%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+section {
+    background-color: white;
+    height: 75%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 5rem;
+    padding: 2rem 0;
+
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+#container_product {
+    height: 23rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+    .card {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        position: relative;
+
+        .icone_div {
+            background: #f80505;
+            position: absolute;
+            z-index: 1000;
+            top: -1rem;
+            right: -1rem;
+            height: 4rem;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .p_icone {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 600;
+                position: absolute;
+            }
+        }
+
+        .box_img {
+            width: 100%;
+            height: 8rem;            
+            overflow: hidden;
+            border-bottom: 1px solid black;
+
+
+            img {
+                width: 110%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+
+
+        }
+
+        .box_info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+
+            h2 {
+                height: 30%;
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+            }
+
+            p {
+                height: 50%;
+                text-align: center;
+                padding-bottom: 2rem;
+                font-size: 0.9rem;
+                padding: 0 0.5rem;
+            }
+
+            .container_price {
+                height: 20%;
+                background-color: #BBBBBB;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 0.5rem;
+                font-weight: 600;
+
+                h3 {
+                    padding-right: 1rem;
+                }
+
+                .box_price {
+                    display: flex;
+
+                    h4 {
+                        padding-right: 0.5rem;
+                    }
+
+                    .promo {
+                        padding-right: 0.5rem;
+                        color: rgb(192, 46, 46);
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+}

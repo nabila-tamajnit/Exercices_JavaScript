@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Operateurs Algebriques</title>
+
+    <link rel="stylesheet" href="global.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="box_calcul">
+                <div class="box_input">
+                    <div>
+                        <label for="note">Note :</label>
+                        <input type="number" id="note" name="note" placeholder="€">
+                    </div>
+                
+                    <div>
+                        <label for="pourboire">Pourboire :</label>
+                        <input type="number" id="pourboire" name="pourboire" placeholder="%">
+                    </div>
+                
+                    <div>
+                        <label for="personnes">Nombre de personnes :</label>
+                        <input type="number" id="personnes" name="personnes">
+                    </div>
+                </div>
+                <input id="btn_calcule" type="submit" value="Calculer">
+            </div>
+            <div class="box_resultat">
+                <div class="resultat">
+                    <div>
+                        <p>Montant pourboire</p>
+                        <p id="total_pourboire">0,00 €</p>
+                    </div>
+                    <div>
+                        <p>Montant à payer <br> <span>/ personne</span> </p>
+                        <p id="total_personnes">0,00 €</p>
+                    </div>
+                    <div>
+                        <p>Montant total</p>
+                        <p id="total_payer">0,00 €</p>
+                    </div>
+                </div>
+                <input id="btn_reinitial" type="submit" value="Réinitialiser">
+            </div>
+        </div>
+    </section>   
+</body>
+</html>

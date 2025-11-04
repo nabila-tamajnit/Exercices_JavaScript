@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    padding: 0 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_input {
+    background-color: rgb(227, 225, 222);
+    height: 80%;
+    width: 45%;
+    margin-right: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #594D38ff;
+    gap: 2rem;
+}
+
+.container_input input {
+    width: 25rem;
+    padding: 10px 10px;
+    border: 2px solid #594D38ff;
+    border-radius: 13px;
+}
+
+.container_input button {
+    width: 12rem;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+.container_btn-photo {
+    height: 80%;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#valider {
+    margin-top: 30px;
+}
+
+.photo-texte {
+    background-color: rgb(227, 225, 222);
+    width: 100%;
+    height: 85%;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #594D38ff;
+    gap: 2rem;
+}
+
+img {
+    border: 2px solid white;
+}
+
+.photo-texte p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #594D38ff;
+}
+
+#image {
+    display: none;
+}
+
+.btn button {
+    width: 12rem;
+    padding: 15px 0;
+}
+
+button {
+    background: #8a8780;
+    background: linear-gradient(303deg, rgba(138, 135, 128, 1) 0%, rgba(102, 96, 81, 1) 50%, rgba(54, 47, 32, 1) 100%);
+    color: white;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 25px;
+    flex-shrink: 0;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 1;
+}
+
+/* Créer des classes pour changer les couleurs en JS */
+
+.chaud {
+    background-color: tomato;
+    
+}
+
+.chaud p {
+    color: white;
+}
+
+.froid {
+    background-color: lightskyblue;
+
+}
+
+.froid p {
+    color : #5D4D40ff;
+}
